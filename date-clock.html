@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date & Clock</title>
+</head>
+<body>
+  <p>Current Date/Time: <span id="now"></span></p>
+  <p>Real-Time Clock: <span id="clock"></span></p>
+  <p>Timer: <span id="timer">0</span></p>
+  <button id="stop">Stop Clock</button>
+
+  <script>
+    // Log current date/time
+    document.getElementById('now').textContent = new Date().toString();
+
+    // Real-time clock
+    const clockSpan = document.getElementById('clock');
+    let count = 0;
+    let interval = setInterval(() => {
+      clockSpan.textContent = new Date().toLocaleTimeString();
+    }, 1000);
+
+    // Stop clock
+    document.getElementById('stop').onclick = () => clearInterval(interval);
+
+    // Compare dates
+    const date1 = new Date('2023-01-01');
+    const date2 = new Date();
+    console.log(date1 < date2 ? 'date1 is earlier' : 'date2 is earlier');
+
+    // Timer that stops at 10i    const timerSpan = document.getElementById('timer');
+    let timer = 0;
+    const timerInterval = setInterval(() => {
+      timer++;
+      timerSpan.textContent = timer;
+      if (timer >= 10) clearInterval(timerInterval);
+    }, 1000);
+  </script>
+</body>
+</html>
