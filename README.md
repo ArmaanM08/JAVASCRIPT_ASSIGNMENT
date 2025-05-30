@@ -1,13 +1,13 @@
 # JAVASCRIPT_ASSIGNMENT
 
-  1.⁠ ⁠JavaScript is a client-side scripting language.
-	2.	You can declare a variable using let, const, or var.
-	3.	To assign a string to a variable, use quotes like this:
-      let name = *"John"*;
-	4.	The function keyword is used to define a function.
-	5.	To output something in the browser console, you use console.log.
-	6.	The data type that stores true or false values is called boolean.
-	7.	To compare two values for equality in value and type, use ===.
+  	1.⁠ ⁠JavaScript is a client-side scripting language.
+	2.	You can declare a variable using let, const, or var.<br>
+	3.	To assign a string to a variable, use quotes like this:<br>
+      			let name = *"John"*;<br>
+	4.	The function keyword is used to define a function.<br>
+	5.	To output something in the browser console, you use console.log.<br>
+	6.	The data type that stores true or false values is called boolean.<br>
+	7.	To compare two values for equality in value and type, use ===.<br>
 	8.	The loop that runs as long as a condition is true is the while loop.
 	9.	In JavaScript, arrays are defined using square brackets.
 	10.	An if statement checks for a condition to decide what code to run.
