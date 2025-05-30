@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Traversal</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">Child 1
+      <button class="btn">Toggle Parent Highlight</button>
+    </div>
+    <div class="child">Child 2</div>
+  </div>
+
+  <script>
+    // parentElement
+    const child = document.querySelector('.child');
+    console.log('Parent of .child:', child.parentElement);
+
+    // children
+    const parent = document.querySelector('.parent');
+    console.log('Children of .parent:', parent.children);
+
+    // closest
+    const btn = document.querySelector('.btn');
+    console.log('Closest .parent from button:', btn.closest('.parent'));
+
+    // Toggle class on parent
+    btn.addEventListener('click', function () {
+      const parentDiv = btn.closest('.parent');
+      parentDiv.classList.toggle('highlight');
+    });
+  </script>
+</body>
+</html>
